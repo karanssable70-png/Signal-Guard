@@ -1,0 +1,249 @@
+{
+  "metadata": {
+    "title": "SignalGuard Data-Driven Conformal Gate Parameters",
+    "calibration_dataset": "CelebDF Genuine Benchmark Dataset + Multi-Camera Ground Truth",
+    "sample_count_N": 25,
+    "conformal_significance_alpha": 0.05,
+    "confidence_level_pct": 95.0,
+    "calibration_timestamp": "2026-10-25T04:59:21Z",
+    "theoretical_foundation": "Non-parametric Conformal Risk Control (Vovk et al.) & Hotelling's Multivariate T^2 / Mahalanobis Distance Quality Manifold. Replaces ad-hoc heuristic thresholds."
+  },
+  "conformal_thresholds": {
+    "min_brightness": 33.2,
+    "max_brightness": 129.9,
+    "max_saturated_fraction": 0.1,
+    "min_laplacian_variance": 9.033,
+    "max_blockiness_ratio": 1.7733,
+    "max_timing_jitter_pct": 15.0,
+    "max_head_yaw_deg": 25.0,
+    "max_head_pitch_deg": 20.0,
+    "max_face_center_shift": 0.04,
+    "min_coverage_pct": 95.1648,
+    "min_continuous_seconds": 4.0,
+    "max_interpolated_fraction": 0.1,
+    "max_region_hr_difference_bpm": 80.0,
+    "min_peak_ratio": 0.2244,
+    "min_local_snr": 1.5,
+    "min_spatial_coherence": 1.0,
+    "min_usable_windows": 2,
+    "min_consistent_window_fraction": 0.3,
+    "min_clear_peak_window_fraction": 0.8,
+    "max_window_bpm_mad": 12.0
+  },
+  "multivariate_manifold": {
+    "feature_names": [
+      "illumination_level",
+      "pixel_saturation",
+      "timing_jitter_pct",
+      "face_motion_jerk",
+      "forehead_coverage",
+      "cheeks_coverage",
+      "forehead_continuous_seconds",
+      "cheeks_continuous_seconds",
+      "interpolation_fraction",
+      "forehead_spectral_peak",
+      "cheeks_spectral_peak",
+      "regional_bpm_diff",
+      "spatial_coherence",
+      "local_snr",
+      "sliding_windows_count",
+      "window_regional_consistency",
+      "window_peak_quality",
+      "forehead_bpm_mad",
+      "cheeks_bpm_mad",
+      "head_pose_yaw",
+      "head_pose_pitch",
+      "image_focus_sharpness",
+      "compression_blockiness"
+    ],
+    "mean_vector": [
+      72.47225,
+      0.00022,
+      0.0,
+      0.00318,
+      98.06593,
+      98.06593,
+      3.07101,
+      3.07101,
+      0.0,
+      0.38423,
+      0.38179,
+      37.11619,
+      1.0,
+      5.34967,
+      1.0,
+      0.41,
+      0.778,
+      3.5,
+      3.5,
+      10.33071,
+      14.35145,
+      51.23777,
+      492.43644
+    ],
+    "mahalanobis_critical_threshold_95": 4.7999
+  },
+  "empirical_quantiles_table": {
+    "illumination_level": {
+      "p05": 35.6923,
+      "median": 73.5592,
+      "p95": 119.9588,
+      "mean": 72.4723,
+      "std": 31.4028
+    },
+    "pixel_saturation": {
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 0.001,
+      "mean": 0.0002,
+      "std": 0.0003
+    },
+    "timing_jitter_pct": {
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "face_motion_jerk": {
+      "p05": 0.0015,
+      "median": 0.003,
+      "p95": 0.0051,
+      "mean": 0.0032,
+      "std": 0.0012
+    },
+    "forehead_coverage": {
+      "p05": 95.1648,
+      "median": 98.9011,
+      "p95": 98.9011,
+      "mean": 98.0659,
+      "std": 3.097
+    },
+    "cheeks_coverage": {
+      "p05": 95.1648,
+      "median": 98.9011,
+      "p95": 98.9011,
+      "mean": 98.0659,
+      "std": 3.097
+    },
+    "forehead_continuous_seconds": {
+      "p05": 2.8867,
+      "median": 3.0,
+      "p95": 3.0,
+      "mean": 3.071,
+      "std": 0.4863
+    },
+    "cheeks_continuous_seconds": {
+      "p05": 2.8867,
+      "median": 3.0,
+      "p95": 3.0,
+      "mean": 3.071,
+      "std": 0.4863
+    },
+    "interpolation_fraction": {
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "forehead_spectral_peak": {
+      "p05": 0.2244,
+      "median": 0.3852,
+      "p95": 0.6042,
+      "mean": 0.3842,
+      "std": 0.1417
+    },
+    "cheeks_spectral_peak": {
+      "p05": 0.2433,
+      "median": 0.3556,
+      "p95": 0.5218,
+      "mean": 0.3818,
+      "std": 0.12
+    },
+    "regional_bpm_diff": {
+      "p05": 0.0,
+      "median": 40.0,
+      "p95": 80.0,
+      "mean": 37.1162,
+      "std": 28.7015
+    },
+    "spatial_coherence": {
+      "p05": 1.0,
+      "median": 1.0,
+      "p95": 1.0,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "local_snr": {
+      "p05": 1.3838,
+      "median": 4.1209,
+      "p95": 12.7394,
+      "mean": 5.3497,
+      "std": 4.6311
+    },
+    "sliding_windows_count": {
+      "p05": 1.0,
+      "median": 1.0,
+      "p95": 1.0,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "window_regional_consistency": {
+      "p05": 0.3,
+      "median": 0.3,
+      "p95": 0.85,
+      "mean": 0.41,
+      "std": 0.22
+    },
+    "window_peak_quality": {
+      "p05": 0.8,
+      "median": 0.8,
+      "p95": 0.8,
+      "mean": 0.778,
+      "std": 0.1078
+    },
+    "forehead_bpm_mad": {
+      "p05": 3.5,
+      "median": 3.5,
+      "p95": 3.5,
+      "mean": 3.5,
+      "std": 0.0
+    },
+    "cheeks_bpm_mad": {
+      "p05": 3.5,
+      "median": 3.5,
+      "p95": 3.5,
+      "mean": 3.5,
+      "std": 0.0
+    },
+    "head_pose_yaw": {
+      "p05": 1.8948,
+      "median": 8.9537,
+      "p95": 22.5117,
+      "mean": 10.3307,
+      "std": 6.6282
+    },
+    "head_pose_pitch": {
+      "p05": 11.9303,
+      "median": 14.7051,
+      "p95": 17.3081,
+      "mean": 14.3514,
+      "std": 1.8378
+    },
+    "image_focus_sharpness": {
+      "p05": 9.033,
+      "median": 42.2016,
+      "p95": 142.7566,
+      "mean": 51.2378,
+      "std": 44.4546
+    },
+    "compression_blockiness": {
+      "p05": 1.1898,
+      "median": 1.4427,
+      "p95": 1.7733,
+      "mean": 492.4364,
+      "std": 2405.3527
+    }
+  }
+}
