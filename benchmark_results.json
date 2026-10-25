@@ -1,0 +1,150 @@
+{
+  "overall_comparison": {
+    "Paper_BPM_Baseline": {
+      "accuracy": 0.54,
+      "auc": 0.5272,
+      "f1": 0.5174,
+      "paper_table4_auc": 0.58
+    },
+    "Paper_SNR_Baseline": {
+      "accuracy": 0.4371,
+      "auc": 0.4048,
+      "f1": 0.4523,
+      "paper_table4_auc": 0.6
+    },
+    "Paper_Spatial_Coherence_Baseline": {
+      "accuracy": 0.5511,
+      "auc": 0.55,
+      "f1": 0.212,
+      "paper_table4_auc": 0.64
+    },
+    "Paper_Handcrafted_rPPG": {
+      "accuracy": 0.6135,
+      "auc": 0.6453,
+      "f1": 0.6062,
+      "paper_table4_auc": 0.68
+    },
+    "Paper_Published_Overall": {
+      "accuracy": 0.8,
+      "auc": 0.88,
+      "f1": 0.795,
+      "paper_table4_auc": 0.88
+    },
+    "SignalGuard_MultiDomain_Ungated": {
+      "accuracy": 0.8013,
+      "auc": 0.9066,
+      "f1": 0.8023,
+      "precision": 0.8029,
+      "recall": 0.8085
+    },
+    "SignalGuard_MultiDomain_Gated": {
+      "accuracy": 0.7711,
+      "auc": 0.8316,
+      "f1": 0.7324,
+      "eligible_sample_fraction": 0.4716
+    }
+  },
+  "category_breakdown": {
+    "FaceSwap": {
+      "signalguard_accuracy": 0.875,
+      "paper_handcrafted_accuracy": 0.55,
+      "paper_published_accuracy": 0.73
+    },
+    "Text2Video": {
+      "signalguard_accuracy": 0.75,
+      "paper_handcrafted_accuracy": 0.6458,
+      "paper_published_accuracy": 0.84
+    },
+    "Real": {
+      "signalguard_accuracy": 0.7955,
+      "paper_handcrafted_accuracy": 0.625,
+      "paper_published_accuracy": 0.8
+    }
+  },
+  "generator_breakdown": {
+    "AkoolAI": {
+      "n_samples": 8,
+      "signalguard_accuracy": 0.875,
+      "paper_handcrafted_accuracy": 0.375,
+      "paper_published_accuracy": 0.857,
+      "accuracy_improvement": 0.018
+    },
+    "CelebDF": {
+      "n_samples": 88,
+      "signalguard_accuracy": 0.7955,
+      "paper_handcrafted_accuracy": 0.625,
+      "paper_published_accuracy": 0.8,
+      "accuracy_improvement": -0.0045
+    },
+    "Deepfaker": {
+      "n_samples": 8,
+      "signalguard_accuracy": 0.875,
+      "paper_handcrafted_accuracy": 0.375,
+      "paper_published_accuracy": 0.761,
+      "accuracy_improvement": 0.114
+    },
+    "Faceswapper": {
+      "n_samples": 8,
+      "signalguard_accuracy": 0.75,
+      "paper_handcrafted_accuracy": 0.5,
+      "paper_published_accuracy": 0.791,
+      "accuracy_improvement": -0.041
+    },
+    "Kaggle": {
+      "n_samples": 8,
+      "signalguard_accuracy": 0.875,
+      "paper_handcrafted_accuracy": 0.75,
+      "paper_published_accuracy": 0.815,
+      "accuracy_improvement": 0.06
+    },
+    "KlingAI": {
+      "n_samples": 8,
+      "signalguard_accuracy": 1.0,
+      "paper_handcrafted_accuracy": 1.0,
+      "paper_published_accuracy": 0.739,
+      "accuracy_improvement": 0.261
+    },
+    "Luma": {
+      "n_samples": 8,
+      "signalguard_accuracy": 0.5,
+      "paper_handcrafted_accuracy": 0.75,
+      "paper_published_accuracy": 0.843,
+      "accuracy_improvement": -0.343
+    },
+    "Pika": {
+      "n_samples": 8,
+      "signalguard_accuracy": 0.75,
+      "paper_handcrafted_accuracy": 0.625,
+      "paper_published_accuracy": 0.855,
+      "accuracy_improvement": -0.105
+    },
+    "PixVerse": {
+      "n_samples": 8,
+      "signalguard_accuracy": 0.625,
+      "paper_handcrafted_accuracy": 0.375,
+      "paper_published_accuracy": 0.87,
+      "accuracy_improvement": -0.245
+    },
+    "RefaceAI": {
+      "n_samples": 8,
+      "signalguard_accuracy": 1.0,
+      "paper_handcrafted_accuracy": 0.75,
+      "paper_published_accuracy": 0.773,
+      "accuracy_improvement": 0.227
+    },
+    "Runway": {
+      "n_samples": 8,
+      "signalguard_accuracy": 0.625,
+      "paper_handcrafted_accuracy": 0.875,
+      "paper_published_accuracy": 0.855,
+      "accuracy_improvement": -0.23
+    },
+    "Sora": {
+      "n_samples": 8,
+      "signalguard_accuracy": 1.0,
+      "paper_handcrafted_accuracy": 0.25,
+      "paper_published_accuracy": 0.68,
+      "accuracy_improvement": 0.32
+    }
+  }
+}

@@ -18,6 +18,16 @@ stress_outputs/
 htmlcov/
 .pytest_cache/
 
+# Large media and video datasets
+data/paper_dataset/
+fake/
+uploads/
+*.mp4
+*.avi
+*.mov
+*.mkv
+.cache/
+
 # OS generated files
 .DS_Store
 Thumbs.db
